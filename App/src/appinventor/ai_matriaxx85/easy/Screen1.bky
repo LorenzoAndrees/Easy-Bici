@@ -1,0 +1,29 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="]o*YQ:yzL3Q!s_2q=O0~" x="-933" y="-179">
+    <mutation component_type="Button" is_generic="false" instance_name="Botón2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Botón2</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="bOd}A?SU=#/j=!W6iT}a">
+        <value name="SCREEN">
+          <block type="text" id=";(EBA?O-(|;gKCRQz.rs">
+            <field name="TEXT">Menu1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="oUCmN7ds+~$@sFh?f`NT" x="-935" y="-80">
+    <mutation component_type="Button" is_generic="false" instance_name="Botón3" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Botón3</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="K4c5CP{|D%A;qVx*k]eU">
+        <value name="SCREEN">
+          <block type="text" id="3Rij[xLsqghO7-Jo=^4)">
+            <field name="TEXT">Faq1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="184" language-version="26"></yacodeblocks>
+</xml>

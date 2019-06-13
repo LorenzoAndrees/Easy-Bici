@@ -1,0 +1,16 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="bUKNNdrZ(W]Z?cH}5rt@" x="-45" y="34">
+    <mutation component_type="Button" is_generic="false" instance_name="Botón1" event_name="TouchDown"></mutation>
+    <field name="COMPONENT_SELECTOR">Botón1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="O#$;v/(g~AbcbemLWz|+">
+        <value name="SCREEN">
+          <block type="text" id="c#:IF(8V=O/A=^wI+H.~">
+            <field name="TEXT">Screen1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="184" language-version="26"></yacodeblocks>
+</xml>

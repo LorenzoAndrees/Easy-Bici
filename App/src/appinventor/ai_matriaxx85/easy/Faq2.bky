@@ -1,0 +1,16 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="NSQb{eR(H.7Um]N$r(p;" x="108" y="40">
+    <mutation component_type="Button" is_generic="false" instance_name="Botón1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Botón1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="yT,4wqjQIh^D/ujwVHl)">
+        <value name="SCREEN">
+          <block type="text" id="Zl;%ptG0J|J4fQ8S(M2Y">
+            <field name="TEXT">Menu1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="184" language-version="26"></yacodeblocks>
+</xml>

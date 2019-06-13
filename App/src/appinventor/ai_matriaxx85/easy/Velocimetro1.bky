@@ -1,0 +1,115 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id=";kf~iDN25!zEDPG4f5{c" x="-280" y="-69">
+    <mutation component_type="Button" is_generic="false" instance_name="Botón1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Botón1</field>
+    <statement name="DO">
+      <block type="component_method" id="B?]f]v4FwNbQPu39EK|-">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyBD1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyBD1</field>
+        <value name="ARG0">
+          <block type="text" id="%gQd=LS9(O,xpE1]7UAU">
+            <field name="TEXT">Diámetro</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="component_set_get" id="[8X_7ZUx}cZX:ROJG5A,">
+            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoDeTexto1"></mutation>
+            <field name="COMPONENT_SELECTOR">CampoDeTexto1</field>
+            <field name="PROP">Text</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="8+wu]{9d7LWfg-`bo2Z(">
+            <value name="SCREEN">
+              <block type="text" id="bB9%(ysLJLx^(7SVfo%$">
+                <field name="TEXT">Velocimetro2</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="o;wB[*s`taLDSh(M}|_R" x="-279" y="92">
+    <mutation component_type="Form" is_generic="false" instance_name="Velocimetro1" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Velocimetro1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="HIx}OpW.#kdV0/a,{8/Z">
+        <mutation component_type="TextBox" set_or_get="set" property_name="NumbersOnly" is_generic="false" instance_name="CampoDeTexto1"></mutation>
+        <field name="COMPONENT_SELECTOR">CampoDeTexto1</field>
+        <field name="PROP">NumbersOnly</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="2VP#OHZkbFdfxK]ndq.i">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="/$#%N,;rUk6xhmKcmpfh" x="-281" y="181">
+    <mutation component_type="ListPicker" is_generic="false" instance_name="ListPicker1" event_name="BeforePicking"></mutation>
+    <field name="COMPONENT_SELECTOR">ListPicker1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="-au%dwy[cmWO{nq;D^Lv">
+        <mutation component_type="ListPicker" set_or_get="set" property_name="Elements" is_generic="false" instance_name="ListPicker1"></mutation>
+        <field name="COMPONENT_SELECTOR">ListPicker1</field>
+        <field name="PROP">Elements</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="yu2VKgnm?5?IirA5P%H!">
+            <mutation component_type="BluetoothClient" set_or_get="get" property_name="AddressesAndNames" is_generic="false" instance_name="BluetoothClient1"></mutation>
+            <field name="COMPONENT_SELECTOR">BluetoothClient1</field>
+            <field name="PROP">AddressesAndNames</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="1~GHdq$Jes(4NQI*7UMb" x="-284" y="279">
+    <mutation component_type="ListPicker" is_generic="false" instance_name="ListPicker1" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">ListPicker1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="~=3p7p5Ecm6Uj}`ymr:C">
+        <mutation component_type="ListPicker" set_or_get="set" property_name="Selection" is_generic="false" instance_name="ListPicker1"></mutation>
+        <field name="COMPONENT_SELECTOR">ListPicker1</field>
+        <field name="PROP">Selection</field>
+        <value name="VALUE">
+          <block type="component_method" id="!A$Bk=jWp[mdm}Br$#g1">
+            <mutation component_type="BluetoothClient" method_name="Connect" is_generic="false" instance_name="BluetoothClient1"></mutation>
+            <field name="COMPONENT_SELECTOR">BluetoothClient1</field>
+            <value name="ARG0">
+              <block type="component_set_get" id=",a7t+E;^w^OgPq:~*q`[">
+                <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ListPicker1"></mutation>
+                <field name="COMPONENT_SELECTOR">ListPicker1</field>
+                <field name="PROP">Selection</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="kxMh/rNWZ@+k43E+49+F">
+            <value name="IF0">
+              <block type="component_set_get" id="~kQ`FKj3PE^;9eFgwqY_">
+                <mutation component_type="BluetoothClient" set_or_get="get" property_name="IsConnected" is_generic="false" instance_name="BluetoothClient1"></mutation>
+                <field name="COMPONENT_SELECTOR">BluetoothClient1</field>
+                <field name="PROP">IsConnected</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="C4-Jh8TN`M@yy(U1sX*b">
+                <mutation component_type="ListPicker" set_or_get="set" property_name="Text" is_generic="false" instance_name="ListPicker1"></mutation>
+                <field name="COMPONENT_SELECTOR">ListPicker1</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text" id="1#uD$SBpc?3fjmjAuU^C">
+                    <field name="TEXT">Conectado</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="184" language-version="26"></yacodeblocks>
+</xml>
